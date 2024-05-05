@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to Know You</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Get to Know You</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="form.html">Survey</a></li>
+        </ul>
+    </nav>
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+        <p>This is a "get to know you" survey based off of some of my interests. Please answer the following questions:</p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="rock_act">Who is your favorite rock act?</label><br>
+        <input type="text" id="rock_act" name="rock_act"><br><br>
+
+        <label for="tv_show">What is your favorite TV show?</label><br>
+        <input type="text" id="tv_show" name="tv_show"><br><br>
+        
+        <label for="movie">What is your favorite movie?</label><br>
+        <input type="text" id="movie" name="movie"><br><br>
+        
+        <label for="fps_franchise">Which is your favorite FPS franchise?</label><br>
+        <input type="radio" id="option1fps" name="fps_franchise" value="Call Of Duty">
+        <label for="option1fps">Call of Duty</label><br>
+        <input type="radio" id="option2fps" name="fps_franchise" value="Halo">
+        <label for="option2fps">Halo</label><br>
+        <input type="radio" id="option3fps" name="fps_franchise" value="Counter-Strike">
+        <label for="option3fps">Counter-Strike</label><br>
+        <input type="radio" id="option4fps" name="fps_franchise" value="Battlefield">
+        <label for="option4fps">Battlefield</label><br>
+        <input type="radio" id="other_option_fps" name="fps_franchise" value="Other">
+        <label for="other_option_fps">Other:</label>
+        <input type="text" id="other_text_fps" name="other_fps_franchise"><br><br>
+
+        <label for="sport">Which is your favorite sport?</label><br>
+        <input type="radio" id="option1sport" name="sport" value="Football">
+        <label for="option1sport">Football</label><br>
+        <input type="radio" id="option2sport" name="sport" value="Basketball">
+        <label for="option2sport">Basketball</label><br>
+        <input type="radio" id="option3sport" name="sport" value="Soccer">
+        <label for="option3sport">Soccer</label><br>
+        <input type="radio" id="option4sport" name="sport" value="Baseball">
+        <label for="option4sport">Baseball</label><br>
+        <input type="radio" id="other_option_sport" name="sport" value="Other">
+        <label for="other_option_sport">Other:</label>
+        <input type="text" id="other_text_sport" name="other_sport"><br><br>
+        
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
